@@ -2,4 +2,6 @@
 
 window.addEventListener("load", function(event) {
 	console.log('hello! from new application.js')
+import "./controllers"
+import "@hotwired/turbo-rails"
 })
