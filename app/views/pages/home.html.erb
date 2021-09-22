@@ -1,2 +1,7 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+<%= turbo_frame_tag 'test' do %>
+	<div data-controller="hello">This should be replaced by hello_controller.js</div>
+	<%= link_to 'Anyone there?', root_path(format: :turbo_stream) %>
+<% end %>
